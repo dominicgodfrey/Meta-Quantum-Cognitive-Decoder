@@ -205,3 +205,38 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+
+# ==========================================
+# MQCD Project Specific Extensions
+# ==========================================
+
+# --- 1. EEG & Raw Data Files ---
+data/*.edf
+data/*.bdf
+data/*.set
+data/*.fdt
+data/*.fif
+
+# --- 2. Model Weights & Large Binaries ---
+models/*.pt
+models/*.pth
+models/*.bin
+*.onnx
+
+# --- 3. Secrets & Project Config ---
+.env.local
+.env.development.local
+secrets.json
+credentials.yaml
+
+# --- 4. Antigravity & AI Agent Artifacts ---
+.antigravity/
+.agent_logs/
+.history/
+
+# --- 5. Temporary Analysis Exports ---
+output/
+plots/*.png
+plots/*.pdf
